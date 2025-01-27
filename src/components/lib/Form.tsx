@@ -93,7 +93,7 @@ const Form:React.FC = () => {
     <form onSubmit={handleSubmit} className="flex flex-col gap-3 mb-4 mt-10">
       <div className="flex flex-col gap-1">
         <label htmlFor="userName" className="text-left font-semibold pl-1">
-          Username:{" "}
+          {endPath === 'login' ? 'Username:' : 'Name:'}
         </label>
         <input
           value={user.username}

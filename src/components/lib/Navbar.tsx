@@ -11,7 +11,7 @@ const Navbar:React.FC = () => {
   // console.log(typeof(userData), "userData");
   const dispatch = useDispatch(); 
 
-  const [navBg, setNavBg] = useState(false);
+  const [navBg, setNavBg] = useState<boolean>(false);
 
   useEffect(() => {
     const changeNavBg = () => {
